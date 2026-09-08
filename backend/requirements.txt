@@ -8,3 +8,4 @@ langchain-text-splitters
 langchain-community
 chromadb
 pypdf
+python-multipart
