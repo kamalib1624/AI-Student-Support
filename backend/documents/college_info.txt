@@ -1,0 +1,7 @@
+College Name: Jayaraj Annapackiam CSI College of Engineering
+
+Department: Computer Science and Engineering (CSE)
+
+The CSE department provides undergraduate education in Computer Science and Engineering.
+
+Students study programming, data structures, databases, computer networks, artificial intelligence and software engineering.

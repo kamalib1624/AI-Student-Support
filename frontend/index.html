@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student AI | Campus Intelligence</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                S
+            </div>
+
+            <div class="brand-text">
+                <h2>Student AI</h2>
+                <span>CAMPUS INTELLIGENCE</span>
+            </div>
+
+        </div>
+
+
+        <button class="new-chat" id="newChatButton">
+            <span class="plus">+</span>
+
+            <span>New Conversation</span>
+
+            <small>⌘ N</small>
+        </button>
+
+
+        <!-- MAIN MENU -->
+
+        <div class="menu-block">
+
+            <div class="menu-label">
+                MAIN MENU
+            </div>
+
+            <button class="menu-item active">
+
+                <span class="menu-icon">✦</span>
+
+                <span>AI Assistant</span>
+
+                <b>01</b>
+
+            </button>
+
+
+            <button class="menu-item" id="knowledgeBaseButton">
+
+                <span class="menu-icon">⌕</span>
+
+                <span>Knowledge Base</span>
+
+            </button>
+
+
+            <button class="menu-item" id="myMemoryButton">
+
+                <span class="menu-icon">♡</span>
+
+                <span>My Memory</span>
+
+            </button>
+
+        </div>
+
+
+        <!-- RECENT -->
+
+        <div class="menu-block recent-block">
+
+            <div class="menu-label">
+                RECENT
+            </div>
+
+            <button class="recent-item">
+                <span></span>
+                CSE Syllabus
+            </button>
+
+            <button class="recent-item">
+                <span></span>
+                Attendance
+            </button>
+
+            <button class="recent-item">
+                <span></span>
+                College Documents
+            </button>
+
+            <button class="recent-item">
+                <span></span>
+                Semester Results
+            </button>
+
+        </div>
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="sidebar-bottom">
+
+            <button class="settings" id="settingsButton">
+                <span>⚙</span>
+                Settings
+            </button>
+
+
+            <div class="profile">
+
+                <div class="profile-avatar">
+                    S
+                </div>
+
+                <div class="profile-info">
+                    <strong>Student</strong>
+                    <span>Personal workspace</span>
+                </div>
+
+                <div class="online-dot"></div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div class="assistant-info">
+
+                <div class="assistant-icon">
+                    ✦
+                </div>
+
+                <div>
+                    <h3>AI Student Assistant</h3>
+
+                    <div class="online-status">
+                        <span></span>
+                        Online & ready to help
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <div class="status-pill">
+                    <span></span>
+                    RAG ACTIVE
+                </div>
+
+                <div class="status-pill">
+                    <span></span>
+                    MEMORY ON
+                </div>
+
+                <button class="more-button">
+                    •••
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="content">
+
+            <!-- HERO -->
+
+            <section class="hero">
+
+                <div class="hero-left">
+
+                    <div class="hero-label">
+                        ✦ &nbsp; YOUR CAMPUS AI
+                    </div>
+
+                    <h1>
+                        Meet your
+                        <span>campus AI.</span>
+                    </h1>
+
+                    <p>
+                        Your intelligent student workspace for college
+                        knowledge, academics, calculations and everyday support.
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <button class="start-button" id="startButton">
+                            Start asking
+                            <span>→</span>
+                        </button>
+
+                        <div class="powered">
+                            <div>✓</div>
+                            Powered by RAG + Tools + Memory
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AI CORE -->
+
+                <div class="ai-visual">
+
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="orbit orbit-three"></div>
+
+                    <span class="particle particle-one"></span>
+                    <span class="particle particle-two"></span>
+                    <span class="particle particle-three"></span>
+
+                    <div class="ai-diamond">
+
+                        <div class="diamond-inner">
+                            ✦
+                        </div>
+
+                    </div>
+
+                    <div class="core-label">
+                        AI CORE
+                        <strong>Ready</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- TOOLS HEADER -->
+
+            <div class="tools-heading">
+
+                <div>
+
+                    <span>SMART TOOLS</span>
+
+                    <h2>
+                        What can I help with?
+                    </h2>
+
+                </div>
+
+                <small>
+                    Explore your student workspace
+                </small>
+
+            </div>
+
+
+            <!-- TOOL CARDS -->
+
+            <section class="tools-grid">
+
+                <!-- CARD 1 -->
+
+                <button class="tool-card purple"
+                        data-question="What is the CSE syllabus?">
+
+                    <div class="card-top">
+
+                        <div class="card-icon">
+                            ◈
+                        </div>
+
+                        <span>01</span>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Campus Knowledge
+                        </h3>
+
+                        <p>
+                            Search syllabus, regulations, documents and college information.
+                        </p>
+
+                    </div>
+
+                    <div class="card-arrow">
+                        ↗
+                    </div>
+
+                </button>
+
+
+                <!-- CARD 2 -->
+
+                <button class="tool-card blue"
+                        data-question="Help me with my academics and study planning.">
+
+                    <div class="card-top">
+
+                        <div class="card-icon">
+                            ▣
+                        </div>
+
+                        <span>02</span>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Academic Guide
+                        </h3>
+
+                        <p>
+                            Get help with subjects, academics and personalized study planning.
+                        </p>
+
+                    </div>
+
+                    <div class="card-arrow">
+                        ↗
+                    </div>
+
+                </button>
+
+
+                <!-- CARD 3 -->
+
+                <button class="tool-card orange"
+                        data-question="Calculate my attendance.">
+
+                    <div class="card-top">
+
+                        <div class="card-icon">
+                            ∑
+                        </div>
+
+                        <span>03</span>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Smart Calculator
+                        </h3>
+
+                        <p>
+                            Calculate attendance, marks and everyday academic values.
+                        </p>
+
+                    </div>
+
+                    <div class="card-arrow">
+                        ↗
+                    </div>
+
+                </button>
+
+
+                <!-- CARD 4 -->
+
+                <button class="tool-card green"
+                        data-question="What do you remember about me?">
+
+                    <div class="card-top">
+
+                        <div class="card-icon">
+                            ♡
+                        </div>
+
+                        <span>04</span>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Personal Memory
+                        </h3>
+
+                        <p>
+                            Remembers useful student preferences across conversations.
+                        </p>
+
+                    </div>
+
+                    <div class="card-arrow">
+                        ↗
+                    </div>
+
+                </button>
+
+            </section>
+
+
+            <!-- QUICK QUESTIONS -->
+
+            <div class="quick-area">
+
+                <span class="quick-label">
+                    TRY ASKING
+                </span>
+
+                <button class="quick-question">
+                    What is the CSE syllabus?
+                </button>
+
+                <button class="quick-question">
+                    Calculate my attendance
+                </button>
+
+                <button class="quick-question">
+                    What do you remember about me?
+                </button>
+
+            </div>
+
+
+            <!-- CHAT MESSAGES -->
+
+            <div class="chat-messages" id="chatMessages"></div>
+
+        </section>
+
+
+        <!-- ================= INPUT ================= -->
+
+        <footer class="chat-footer">
+
+            <div class="input-wrapper">
+
+                <button class="attach-button" id="attachButton">
+                    +
+                </button>
+                <input type="file" id="documentInput" accept=".pdf,.txt" hidden>
+
+
+                <input
+                    type="text"
+                    id="questionInput"
+                    placeholder="Ask anything about your campus..."
+                    autocomplete="off"
+                >
+
+
+                <button
+                    class="voice-button"
+                    id="voiceButton"
+                    title="Voice input">
+
+                    <span class="voice-circle"></span>
+
+                </button>
+
+
+                <button
+                    class="send-button"
+                    id="sendButton">
+
+                    ↑
+
+                </button>
+
+            </div>
+
+
+            <div class="footer-info">
+
+                <span>
+                    Student AI • Intelligent Campus Hub
+                </span>
+
+                <span>
+                    Verify important college information
+                </span>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+</div>
+<!-- ================= SETTINGS PANEL ================= -->
+
+<div class="settings-panel" id="settingsPanel">
+
+    <div class="settings-header">
+        <h2>Settings</h2>
+        <button id="closeSettings">×</button>
+    </div>
+
+    <div class="settings-option">
+        <div>
+            <strong>Student AI</strong>
+            <p>AI Assistant preferences</p>
+        </div>
+    </div>
+
+    <div class="settings-option">
+        <div>
+            <strong>Clear Chat</strong>
+            <p>Remove the current conversation</p>
+        </div>
+
+        <button id="clearChatButton">Clear</button>
+    </div>
+
+</div>
+<!-- ================= KNOWLEDGE BASE PANEL ================= -->
+
+<div class="knowledge-panel" id="knowledgePanel">
+
+    <div class="knowledge-header">
+        <div>
+            <span>KNOWLEDGE BASE</span>
+            <h2>Student Resources</h2>
+        </div>
+
+        <button id="closeKnowledge">×</button>
+    </div>
+
+    <div class="knowledge-search">
+        <input
+            type="text"
+            id="knowledgeSearch"
+            placeholder="Search your resources..."
+        >
+    </div>
+
+    <div class="knowledge-items">
+
+        <div class="knowledge-item">
+            <div class="knowledge-icon">📘</div>
+            <div>
+                <strong>CSE Syllabus</strong>
+                <p>Course syllabus and subject information</p>
+            </div>
+        </div>
+
+        <div class="knowledge-item">
+            <div class="knowledge-icon">📄</div>
+            <div>
+                <strong>College Documents</strong>
+                <p>Important college documents and resources</p>
+            </div>
+        </div>
+
+        <div class="knowledge-item">
+            <div class="knowledge-icon">📊</div>
+            <div>
+                <strong>Semester Results</strong>
+                <p>Academic results and semester information</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= MY MEMORY PANEL ================= -->
+
+<div class="memory-panel" id="memoryPanel">
+
+    <div class="memory-header">
+        <div>
+            <span>MY MEMORY</span>
+            <h2>Memory Center</h2>
+        </div>
+
+        <button id="closeMemory">×</button>
+    </div>
+
+    <div class="memory-search">
+        <input
+            type="text"
+            id="memorySearch"
+            placeholder="Search your memories..."
+        >
+    </div>
+
+    <div class="memory-items">
+
+        <div class="memory-item">
+            <div class="memory-icon">🧠</div>
+            <div>
+                <strong>Saved Information</strong>
+                <p>Information remembered by Student AI</p>
+            </div>
+        </div>
+
+        <div class="memory-item">
+            <div class="memory-icon">💬</div>
+            <div>
+                <strong>Conversation Memory</strong>
+                <p>Useful details from your conversations</p>
+            </div>
+        </div>
+
+        <div class="memory-item">
+            <div class="memory-icon">⭐</div>
+            <div>
+                <strong>Preferences</strong>
+                <p>Your saved preferences and interests</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
