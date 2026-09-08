@@ -8,8 +8,7 @@
    API CONFIG
 ========================================================= */
 
-const API_URL = "http://127.0.0.1:8000/api/agent-chat";
-
+const API_URL = "https://ai-student-support-3qw8.onrender.com/api/agent-chat";
 
 /* =========================================================
    ELEMENTS
@@ -1027,7 +1026,7 @@ if (documentInput) {
             console.log("Uploading:", file.name);
 
             const response = await fetch(
-                "http://127.0.0.1:8000/api/upload-document",
+                "https://ai-student-support-3qw8.onrender.com/api/upload-document",
                 {
                     method: "POST",
                     body: formData
