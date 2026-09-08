@@ -8,7 +8,7 @@ from langchain.tools import tool
 from langchain.agents import create_agent
 
 from langchain_chroma import Chroma
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import TextLoader, PyPDFLoader
@@ -229,8 +229,8 @@ if chunks:
         f"Creating vector database from {len(chunks)} chunks..."
     )
 
-    embeddings = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2"
+    embeddings = GoogleGenerativeAIEmbeddings(
+        model="gemini-embedding-001"
     )
 
     vectorstore = Chroma.from_documents(
